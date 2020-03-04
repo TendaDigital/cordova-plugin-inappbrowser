@@ -48,7 +48,9 @@
     // simplified from: http://stackoverflow.com/a/25669695/219684
 
     UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame:statusBarFrame];
-    bgToolbar.barStyle = UIBarStyleDefault;
+    //bgToolbar.barStyle = UIBarStyleDefault;
+    bgToolbar.translucent = false;
+    bgToolbar.barTintColor = [UIColor colorWithRed:0.0/255.0 green:184.0/255.0 blue:173.0/255.0 alpha:1.0];
     [bgToolbar setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     [self.view addSubview:bgToolbar];
 
